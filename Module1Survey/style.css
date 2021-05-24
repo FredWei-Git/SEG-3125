@@ -1,9 +1,5 @@
-.shopify {
-    width: 40;
-    height: 30;
-}
-
 body{
+    font-family: lato;
     display: flex;
     height: 200vh;
     justify-content: center;
@@ -12,10 +8,30 @@ body{
 }
 
 .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     max-width: 700px;
     width: 100%;
     background-color: #fff;
     padding: 25px 30px;
     border-radius: 5px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+
+.button{
+    font-family: lato;
+}
+
+.submitButton{
+    background-color: #91e294;
+    border: none;
+    color: white;
+    padding: 12px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
