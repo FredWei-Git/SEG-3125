@@ -1,7 +1,8 @@
 body{
     font-family: lato;
     display: flex;
-    height: 200vh;
+    flex-direction: column;
+    height: 220vh;
     justify-content: center;
     align-items: center;
     background: linear-gradient(135deg, #a2fac4, #e9dcee)
