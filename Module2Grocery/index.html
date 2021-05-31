@@ -19,15 +19,21 @@
     <!-- Tab content -->
     <div id="Client" class="tabcontent">
         <h3>Client Information</h3>
-        <p>Tell us a bit about you.</p>
+        <p>Tell us a bit about you.</p> 
         Select your product preferences:
-        <select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
-            <option value=""></option>
-            <option value="lactose free">lactose free</option>
-            <option value="nut free">nut free</option>
-            <option value="organic">organic</option>
-            <option value="None">None</option>
-        </select>
+        <form id="dietSelect" name="dietSelect">
+            <input type="checkbox" id="lactose free" name="restriction" value="lactose free">
+            <label for="lactose free">Lactose Free</label><br>
+            <input type="checkbox" id="nut free" name="restriction" value="nut free">
+            <label for="nut free">Nut Free</label><br>
+            <input type="checkbox" id="organic" name="restriction" value="organic">
+            <label for="organic">Organic</label><br>
+            <input type="checkbox" id="None" name="restriction" value="None">
+            <label for="None">None</label><br>
+            <button id="Confirm" type="button" class="block" onclick="populateListProductChoices('restriction', 'displayProduct')">
+                Confirm Product Preferences
+            </button>
+        </form>
     </div>
 
     <div id="Products" class="tabcontent">
