@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- This style sheet is taken from https://www.w3schools.com/howto/howto_js_tabs.asp-->
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="storeTitle">
+        <h1>No Brills Grocery Store</h1>
+    </div>
+    
+    <img src="assets/warning.png" alt="Warning" id="warning">
+
+    <!-- Tab links, each one with an onclick event associated with it -->
+    <div class="tab">
+        <button id="client" class="tablinks" onclick="openInfo(event, 'Client')">Client</button>
+        <button id="products" class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
+        <button id="cart" class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
+        <button id="faq" class="tablinks" onclick="openInfo(event, 'FAQ')">FAQ</button>
+    </div>
+
+
+    <!-- Tab content -->
+    <div id="Client" class="tabcontent">
+        <p>> Client</p>
+        <h3>Client Information</h3>
+        <p>Help us find the products for you.</p>
+        <p>Select "None" if you don't have any product preferences</p>
+        Select your product preferences:
+        <form id="dietSelect" name="dietSelect">
+            <input type="checkbox" id="lactose free" name="restriction" value="lactose free">
+            <label for="lactose free">Lactose Free</label><br>
+            <input type="checkbox" id="nut free" name="restriction" value="nut free">
+            <label for="nut free">Nut Free</label><br>
+            <input type="checkbox" id="organic" name="restriction" value="organic">
+            <label for="organic">Organic</label><br>
+            <input type="checkbox" id="None" name="restriction" value="None">
+            <label for="None">None</label><br>
+            <!-- -->
+            <label for="address">Address (Optional)</label><br>
+            <input type="text" id="address" name="address" value=""><br>
+            <button id="Confirm" type="button" class="block"
+                onclick="populateListProductChoices('restriction', 'displayProduct');openInfo(event, 'Products')">
+                Confirm Product Preferences
+            </button>
+        </form>
+    </div>
+
+    <div id="Products" class="tabcontent">
+        <p>> Client > Products</p>
+        <h3>Your Personalized Products</h3>
+        <p>Here are the products based on your restrictions.</p>
+        <p>If there are no products make sure to go to client information to select your restrictions.</p>
+        Select items to buy:
+        <div id="displayProduct"></div>
+        <button id="addCart" type="button" class="block" onclick="selectedItems();openInfo(event, 'Cart')">
+            Add selected items to cart.
+        </button>
+        <img src="assets/storeimage.jpg" alt="Store Image">
+    </div>
+
+    <div id="Cart" class="tabcontent">
+        <p>> Client > Products > Cart</p>
+        <h3>Cart</h3>
+        <p>Here is your cart.</p>
+        <div id="displayCart"></div>
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="100" value="1">
+        <button id="Confirm" type="button" class="block" onclick="selectedItems()">
+            Save
+        </button>
+    </div>
+
+    <div id="FAQ" class="tabcontent">
+        <p>> FAQ</p>
+        <h3>What is our phone number</h3>
+        <p>123-456-789</p>
+        <h3>How do I order products</h3>
+        <p>1. Select your product preferences in the Client tab. Make sure to confirm your selection.</p>
+        <p>2. Select your products in the Products tab. Make sure to add items to your cart.</p>
+        <p>3. Confirm the total price of your items in the Cart tab. You can change the quantity of your items.</p>
+        <h3>Where is the location of the grocery store</h3>
+        <p>123 Redhorse Avenue.</p>
+    </div>
+
+    <footer>Website Designed By: Fred Wei </footer>
+    <script src="scripts/groceries.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
