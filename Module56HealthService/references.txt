@@ -1,10 +1,16 @@
-logo from https://www.onlinelogomaker.com/blog/7-elements-exceptional-medical-logo/
+nav bar
+2 more icons
+tool tip
 
-pictures:
-https://youthincmag.com/4-things-you-didnt-know-about-becoming-a-surgeon
-https://tm-women.org/nurses/
-https://theconversation.com/whats-in-a-title-when-it-comes-to-doctor-more-than-you-might-think-127979
+code references:
+time select - https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/time
 
+icons
+icons obtained from https://icons8.com/
 
-https://getbootstrap.com/docs/5.0/utilities/background/
-https://getbootstrap.com/docs/4.0/content/tables/
+jqueryUI theme
+Blitzer
+
+images
+same images as from lab 4
+
