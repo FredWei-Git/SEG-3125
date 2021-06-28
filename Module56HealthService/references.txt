@@ -1,0 +1,10 @@
+logo from https://www.onlinelogomaker.com/blog/7-elements-exceptional-medical-logo/
+
+pictures:
+https://youthincmag.com/4-things-you-didnt-know-about-becoming-a-surgeon
+https://tm-women.org/nurses/
+https://theconversation.com/whats-in-a-title-when-it-comes-to-doctor-more-than-you-might-think-127979
+
+
+https://getbootstrap.com/docs/5.0/utilities/background/
+https://getbootstrap.com/docs/4.0/content/tables/

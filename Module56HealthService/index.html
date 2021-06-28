@@ -1,0 +1,205 @@
+<!-- Starter template from https://getbootstrap.com/docs/5.0/getting-started/introduction/ -->
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <title>Lab 5/6 Health Service</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <nav class="navbar bg-danger bg-gradient text-dark p-3 my-3 ">
+    <h1><img src="assets/logo.jpg" width="130" height="130"> Welcome to Emergency Health Service Canada (EHSC)</h1>
+  </nav>
+
+  <!-- Address -->
+  <div class=" p-3 my-3 border bg-light">
+    <h1 class="">Our Location and Contact Information</h1>
+    <p class="p-4 my-3" style="font-size: 25px">EHSC Toronto is located at <strong>123 BigShoe Ave</strong>. Open 24/7.
+    </p>
+    <p style="font-size: 25px; padding-left: 1.5rem">Contact Canada's emergency department at
+      <strong>123-456-7890</strong> for immediate attention or fill out your information in the services section.
+    </p>
+    <p style="font-size: 25px; padding-left: 1.5rem">We provide medical attention to <strong>serious medical
+        emergencies</strong>.
+    </p>
+  </div>
+
+  <!-- Alert -->
+
+  <div class="alert alert-danger alert-dismissible fade show" role="alert">
+    <strong>Attention!</strong> If you are in need of immediate medical attention call <strong>123-456-7890</strong>.
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+
+  <!-- Services -->
+  <h1>EHSC Services</h1>
+  <table class="table table-info table-hover table-danger">
+    <thead>
+      <tr>
+        <th scope="col">
+          <h2>Service</h2>
+        </th>
+        <th scope="col">
+          <h2>Price</h2>
+        </th>
+        <th scope="col">
+          <h2>Description</h2>
+        </th>
+        <th scope="col">
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Bleeding</td>
+        <td>$100-$200</td>
+        <td>Provide medical attention to stop blood loss, and deep wounds.
+        </td>
+        <td>
+          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Select Service
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>Fit/Epileptic Seizure</td>
+        <td>$200-$300</td>
+        <td>Provide medical attention and relief to someone suffering from epilepsy.</td>
+        <td>
+          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Select Service
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>Severe Pain/Injury</td>
+        <td>$50-$100</td>
+        <td>Provide pain relief, diagnose and treat injuries.</td>
+        <td>
+          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Select Service
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>Heart Attack</td>
+        <td>$300-$500</td>
+        <td>Restore blood flow for the patient.</td>
+        <td>
+          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Select Service
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>Stroke</td>
+        <td>$300-$500</td>
+        <td>Restore blood flow for the patient.</td>
+        <td>
+          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Select Service
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Functionality of Buttons -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Select Service</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Fill out your contact information
+          <div class="form-check">
+            <label for="firstname">Date</label>
+            <input type="text" class="form-control" id="date" placeholder="May 8" required="">
+          </div>
+          Time
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="morning">
+            <label class="form-check-label" for="morning">
+              Morning (12 am - 12 pm)
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="afternoon">
+            <label class="form-check-label" for="afternoon">
+              Afternoon (12 pm - 6 pm)
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="evening">
+            <label class="form-check-label" for="evening">
+              Evening (6 pm - 12 am)
+            </label>
+          </div>
+          <div class="form-check">
+            <label for="firstname">Address</label>
+            <input type="text" class="form-control" id="address" placeholder="123 BigShoe Ave." required="">
+          </div>
+
+          <div class="form-check">
+            <label for="firstname">Phone Number (Optional)</label>
+            <input type="text" class="form-control" id="phone" placeholder="123-456-7890" required="">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Experts -->
+  <h1>View our Staff</h1>
+  <div class="row justify-content-around">
+    <div class="card" style="width: 18rem; background-color: rgb(224, 102, 102); font-size: 24px;">
+      <img src="assets/doctor1.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Judy is a doctor that is incharge of diagnosing injuriy and blood loss treatment.</p>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem; background-color: rgb(224, 102, 102); font-size: 24px;">
+      <img src="assets/surgeon1.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Kyle is one of our experienced surgeons that have performed many operations on heart attacks.</p>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem; background-color: rgb(224, 102, 102); font-size: 24px;">
+      <img src="assets/nurse1.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Lisa is a nurse that provides support to the doctors and surgeons. She also makes sure patients are 
+          okay after operations.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
