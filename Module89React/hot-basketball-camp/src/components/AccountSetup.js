@@ -22,7 +22,7 @@ export class AccountSetup extends Component {
                     <input type="email" className="form-control" name="email" onChange={inputChange('email')} value={values.email} />
                 </div>
                 <div className="form-group">
-                    <label htmlFor="phone">Phone Number</label>
+                    <label htmlFor="phone">Phone Number (XXX-XXX-XXXX)</label>
                     <input type="text" className="form-control" name="phone" onChange={inputChange('phone')} value={values.phone} />
                 </div>
                 <div className="form-group">

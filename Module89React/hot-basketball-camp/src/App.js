@@ -4,8 +4,27 @@ import 'bootstrap/dist/css/bootstrap.css'
 import { Nav, Navbar, NavDropdown, Card } from 'react-bootstrap'
 import Form from './components/Form';
 import Video from './components/Videos';
+import React, { useState } from 'react';
+import { IntlProvider, FormattedMessage, FormattedDate } from 'react-intl';
+
+const message = {
+  en: {
+    heading: 'About Us',
+    body: 'Hot Basketball Camp offers private coaching sessions as well as seasonal basketball camps for kids. Our programs are perfect for parents that want to give their kid experience in basketball and atheletes looking to improve their game.',
+  },
+  fr: {
+    heading: 'À propos de nous',
+    body: "Hot Basketball Camp propose des séances d'entraînement privées ainsi que des camps saisonniers de basket-ball pour les enfants. Nos programmes sont parfaits pour les parents qui veulent donner à leur enfant une expérience de basket-ball et pour les athlètes qui cherchent à améliorer leur jeu.",
+  },
+};
 
 function App() {
+  const [locale, setLocale] = useState('en');
+
+  const handleChange = (e) => {
+    setLocale(e.target.value);
+  };
+
   return (
     <div className="App">
       <Navbar bg="MyBlack" variant="dark" sticky="top" expand="lg">
@@ -35,16 +54,31 @@ function App() {
           {/*Form*/}
           <Form />
         </div>
+
         <div id="about">
-          <h1>About Us</h1>
-          <h2>
-            Hot Basketball Camp offers private coaching sessions as
-            well as seasonal basketball camps for kids. Our programs are perfect for
-            parents that want to give their kid experience in basketball and
-            atheletes looking to improve their game.
-            <img src="/basketballtraining.jpg" alt="training" />
-          </h2>
+          {/*Switching Language */}
+          <select onChange={handleChange} defaultValue={locale}>
+            {['en', 'fr'].map((x) => (
+              <option key={x}>{x}</option>
+            ))}
+          </select>
+
+          <IntlProvider locale={locale} messages={message[locale]}>
+            <h1>
+              <FormattedMessage
+                id="heading"
+                defaultMessage="About Us"
+                values={{ locale }}
+              />
+            </h1>
+            <br />
+            <h2>
+              <FormattedMessage id="body" defaultMessage="Hot Basketball Camp offers private coaching sessions as well as seasonal basketball camps for kids. Our programs are perfect for parents that want to give their kid experience in basketball and atheletes looking to improve their game." />
+            </h2>
+          </IntlProvider>
+          <img src={process.env.PUBLIC_URL + '/basketballtraining.jpg'} alt="training" />
         </div>
+
         <div id="videos">
           <h1>Videos</h1>
           <h2>Shooting Drills</h2>
