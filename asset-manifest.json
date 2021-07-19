@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/SEG-3125/Module89React/hot-basketball-camp/static/css/main.9d114ced.chunk.css",
+    "main.js": "/SEG-3125/Module89React/hot-basketball-camp/static/js/main.5ece9247.chunk.js",
+    "main.js.map": "/SEG-3125/Module89React/hot-basketball-camp/static/js/main.5ece9247.chunk.js.map",
+    "runtime-main.js": "/SEG-3125/Module89React/hot-basketball-camp/static/js/runtime-main.4ec63cb4.js",
+    "runtime-main.js.map": "/SEG-3125/Module89React/hot-basketball-camp/static/js/runtime-main.4ec63cb4.js.map",
+    "static/css/2.455652b6.chunk.css": "/SEG-3125/Module89React/hot-basketball-camp/static/css/2.455652b6.chunk.css",
+    "static/js/2.ad5801a8.chunk.js": "/SEG-3125/Module89React/hot-basketball-camp/static/js/2.ad5801a8.chunk.js",
+    "static/js/2.ad5801a8.chunk.js.map": "/SEG-3125/Module89React/hot-basketball-camp/static/js/2.ad5801a8.chunk.js.map",
+    "static/js/3.d08342c6.chunk.js": "/SEG-3125/Module89React/hot-basketball-camp/static/js/3.d08342c6.chunk.js",
+    "static/js/3.d08342c6.chunk.js.map": "/SEG-3125/Module89React/hot-basketball-camp/static/js/3.d08342c6.chunk.js.map",
+    "index.html": "/SEG-3125/Module89React/hot-basketball-camp/index.html",
+    "static/css/2.455652b6.chunk.css.map": "/SEG-3125/Module89React/hot-basketball-camp/static/css/2.455652b6.chunk.css.map",
+    "static/css/main.9d114ced.chunk.css.map": "/SEG-3125/Module89React/hot-basketball-camp/static/css/main.9d114ced.chunk.css.map",
+    "static/js/2.ad5801a8.chunk.js.LICENSE.txt": "/SEG-3125/Module89React/hot-basketball-camp/static/js/2.ad5801a8.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/SEG-3125/Module89React/hot-basketball-camp/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4ec63cb4.js",
+    "static/css/2.455652b6.chunk.css",
+    "static/js/2.ad5801a8.chunk.js",
+    "static/css/main.9d114ced.chunk.css",
+    "static/js/main.5ece9247.chunk.js"
+  ]
+}
