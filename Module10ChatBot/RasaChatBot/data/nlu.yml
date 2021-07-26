@@ -1,0 +1,53 @@
+nlu:
+- intent: greet
+  examples: |
+    - Hi
+    - Hey!
+    - Hallo
+    - Good day
+    - Good morning
+    - What's up?
+    - How's everything?
+    - Good to see you
+    - Yo!
+
+- intent: subscribe
+  examples: |
+    - I want to get the newsletter
+    - Can you send me the newsletter?
+    - Can you sign me up for the newsletter?
+
+- intent: inform
+  examples: |
+    - My email is example@example.com
+    - random@example.com
+    - Please send it to anything@example.com
+    - Email is something@example.com
+
+- intent: thanks
+  examples: |
+    - Thanks!
+    - Thank you!
+    - I appreciate that!
+    - Beyond grateful!
+
+- intent: bye
+  examples: |
+    - Bye
+    - Good bye
+    - See you later
+    - Take care
+
+- intent: unsubscribe
+  examples: |
+    - I want to unsubscribe
+    - Unsubscribe me from the newsletter
+    - Can you unsubscribe me from the newsletter?
+    - Please unsubscribe me from the newsletter
+
+- intent: explain
+  examples: |
+    - I'm not interested anymore
+    - Not enough time
+    - I read another newsletter
+    - My interests have changed
